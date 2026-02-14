@@ -31,8 +31,12 @@ console.log(promedio);
 // FUNCIÓN 3: Buscar por nombre
 // ============================================
 
-const nombre = aprendices.filter(n =>
-n.nombre);
+const nombres = aprendices.filter(u => u.nombre === "Ana")
+
+// ============================================
+// FUNCIÓN 4: Obtener nombres
+// ============================================
+const nombres2 = aprendices.map(a => a.nombre)
 console.log(nombre)
 
 
