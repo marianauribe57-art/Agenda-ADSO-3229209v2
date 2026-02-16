@@ -30,7 +30,7 @@ const nombres = aprendices.filter(u => u.nombre === "Ana")
 
 // FUNCIÓN 4: Obtener nombres
 const nombres2 = aprendices.map(a => a.nombre)
-console.log(nombre)
+console.log(nombres2)
 
 
 
@@ -55,7 +55,7 @@ const aplicarDescuento = (productos, porcentaje) => productos.map(p => ({
     nombre: p.nombre,
     precio: p.precio - (p.precio * porcentaje / 100)
   }));
-
+console.log(aplicarDescuento(productos, 10))
 
 // FUNCIÓN 4: ordenarPorPrecio(productos)
 const precio = productos.sort((a,b) => a.precio - b.precio)
@@ -131,9 +131,7 @@ agregarContacto("Eduardo", "987654321", "Eduarditopapito@hotmail.com");
 agregarContacto("Ana", "123456789", "ana@gmail.com");
 console.log(contactos)
 
-//Eliminar contacto
-eliminarContacto(1)
-console.log(contactos)
+
 
 //Buscar contacto
 console.log(buscarContacto("Lucia"));
@@ -141,5 +139,10 @@ console.log(buscarContacto("Lucia"));
 //Actualizar contacto
 console.log(actualizarContacto(1,"Lucia", "123456789", "luciaperez@hotmail.com"))
 
+//Eliminar contacto
+eliminarContacto(1)
+console.log(contactos)
+
 //Exportar Json
 console.log("\nExportar JSON:\n", exportarJSON(contactos));
+
