@@ -1,3 +1,70 @@
+
+//Ejercicio 1: Gestión de aprendices
+// ARRAY PRINCIPAL DE APRENDICES
+
+const aprendices = [
+{ id: 1, nombre: "Ana", ficha: 3223874, nota: 4.2 },
+{ id: 2, nombre: "Luis", ficha: 3223874, nota: 3.5 },
+{ id: 3, nombre: "María", ficha: 3223875, nota: 4.8 }
+];
+
+
+// FUNCIÓN 1: Obtener aprobados
+
+const aprobados = aprendices.filter(n => n.nota >=3.0);
+console.log (aprobados)
+
+// FUNCIÓN 1: Calcular promedio
+const notas = aprendices.map(a => a.nota)
+
+const sumas = notas.reduce((acum, nota) => {
+return acum + nota})
+
+const promedio = sumas / notas.length;
+console.log(promedio);
+
+
+// FUNCIÓN 3: Buscar por nombre
+const nombres = aprendices.filter(u => u.nombre === "Ana")
+
+
+// FUNCIÓN 4: Obtener nombres
+const nombres2 = aprendices.map(a => a.nombre)
+console.log(nombre)
+
+
+
+//Ejercicio 2: Filtros y transformaciones
+const productos = [
+{ nombre: "Laptop", precio: 1200000,stock: 5 },
+{ nombre: "Mouse", precio: 35000,stock: 0 },
+{ nombre: "Teclado", precio: 85000,stock: 12 }];
+
+// FUNCIÓN 1: obtener Disponibles(productos)
+const disponibles = productos.filter(n => n.stock >0);
+
+// FUNCIÓN 2: calcularInventario(productos)
+const stocks = productos.map(a => a.stock)
+
+const suma = stocks.reduce((acum, cantidad) => {
+return acum + cantidad})
+console.log(suma)
+
+// FUNCIÓN 3: aplicarDescuento(productos,porcentaje)
+const aplicarDescuento = (productos, porcentaje) => productos.map(p => ({
+    nombre: p.nombre,
+    precio: p.precio - (p.precio * porcentaje / 100)
+  }));
+
+
+// FUNCIÓN 4: ordenarPorPrecio(productos)
+const precio = productos.sort((a,b) => a.precio - b.precio)
+console.log(precio)
+
+
+
+
+//Ejercicio 3: Manipulación de contactos
 let contactos = [];
 let IdUnico = 1
 
