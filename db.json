@@ -1,0 +1,26 @@
+{
+  "contactos": [
+    {
+      "id": "1",
+      "nombre": "Mariana",
+      "telefono": "3014342881",
+      "correo": "Marianauribe57@gmail.com",
+      "etiqueta": "Estudiante"
+    },
+    {
+      "id": "d105",
+      "nombre": "ANA",
+      "telefono": "3137146121",
+      "correo": "marianita30311@hotmail.com",
+      "etiqueta": "Profesora"
+    },
+    {
+      "id": "e162",
+      "nombre": "Mauricio",
+      "telefono": "300 715 61 22",
+      "correo": "mauro@hotmail.com",
+      "etiqueta": "Estudiante"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
