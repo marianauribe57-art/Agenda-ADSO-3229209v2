@@ -20,8 +20,8 @@ import {
 import { APP_INFO } from "./config";
 
 // Importamos componentes hijos
-import FormularioContacto from "./components/FormularioContacto";
-import ContactoCard from "./components/ContactoCard";
+import FormularioContacto from "./Components/FormularioContacto";
+import ContactoCard from "./Components/ContactoCard";
 
 function App() {
 
