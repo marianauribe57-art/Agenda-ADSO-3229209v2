@@ -1,4 +1,19 @@
 {
-  "contactos": [],
+  "contactos": [
+    {
+      "nombre": "ana",
+      "telefono": "3022578368",
+      "correo": "marianita30311@hotmail.com",
+      "etiqueta": "trabajo",
+      "id": "4439"
+    },
+    {
+      "id": "b01e",
+      "nombre": "Paola",
+      "telefono": "3017458267",
+      "correo": "pao@gmail.com",
+      "etiqueta": "Profe"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
